@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV ChPacelli</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img  src="profilo instagram_files/profilo1.jpg" alt="profilo1.jpg" height="420" weight="420">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Chiara Pacelli</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Pianista e neobassista. Amante della scienza e dell'arte.</h4>
+
+
+                  <br><br><br>
+
+            <!--      <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p> -->
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+              <!--        <li><a href="twitterlink" target="_blank"  >@twitter</a></li> -->
+                      <li><a href="https://www.instagram.com" target="_blank" >instagram</a>: @chiara.lince</li>
+                      <li><a href="https://mail.google.com" target="_blank">e-mail</a>: chpacelli@gmail.com  </li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Educazione</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Scuole Superiori</li>
+                      <li class="doveed">Liceo Scientifico Georges Lemaitre</li>
+                      <li class="descrizioneed"></li>
+                  </ul>
+
+                  <!-- Elemento 2
+
+                  <ul class="education">
+                      <li class="nomeed">Tipo scuola 2</li>
+                      <li class="doveed">Nome scuola 2</li>
+                      <li class="descrizioneed">Parole parole parole... descrizione descrizione descrizione... io sono un testo lungo a piacere!</li>
+                  </ul>-->
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Lingue</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(nativa)</span></li>
+                      <li>Inglese <span class="lang-desc">(attuale studio scolastico, certificazioni: KET, PET)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(3 anni di studio scolastico)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">La mia persona</h2>
+                  <div class="summary">
+                      <p>Sono una ragazza estroversa, mi interesso agli altri e a ciò che mi circonda. Mi piacciono le materie scientifiche in tutte le loro forme (matematica, fisica, chimica, astronomia, biologia...), ma mi affascina anche la letteratura. Amo l'arte, in particolare la musica, di cui apprezzo diversi generi (classica, pop, rock, jazz, funky, punk); suono il pianoforte da 8 anni in una scuola di musica non professionale, da 1 anno ha cominciato a suonare il basso elettrico. Nel mio tempo libero mi dedico a lavoretti manuali e alla cucina (in particolare la pasticceria). Sono un'amante degli animali e della natura, in particolare di felini e uccelli, non adoro gli invertebrati. In passato ho fatto volontariato al Parco Nazionale d'Abruzzo e una mia prospettiva è quella di andare a lavorare come volontaria al Centro Cetacei di Riccione.</p>
+                  </div>
+              </section>
+
+
+
+        <!--      <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div> -->
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                      <img src="profilo instagram_files/passioni1.jpg" class="img-thumbnail img-responsive" max-width="200">
+                      <p>Questa è una delle torte che ho fatto.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="passioni_files/passioni2.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Questa è la mia gatta Spina.</p>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                      <img src="profilo instagram_files/passioni3.jpg" class="img-thumbnail img-responsive" max-width="200">
+                      <p>Progetto di una recita d'inglese per l'Hopen Day della scuola, io e il mio compagno abbiamo preparato un brano a 4 mani al pianoforte.</p>
+                    </div>
+                    <div class="col-sm-6 pass1">
+                        <img src="passioni_files/lince.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Questo è il mio gatto Lince (da cucciolo).</p>
+                    </div>
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

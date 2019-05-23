@@ -1,0 +1,64 @@
+/**************
+Qui modifico tutto il body del mio html
+**************/
+
+body{
+   background-color:#114444; background-image: url("E:/CodeLikeAGirl/Chiara Pacelli/sfondo3.jpg"); background-size: cover
+}
+
+
+/**************
+Qui vado a definire il contenirore del mio contenuto
+**************/
+
+.maincontainer{
+  background-color: white;
+  color: inherit;
+}
+
+
+
+/**************
+intestazione
+**************/
+
+.jumbotron{ background-image: url("E:/CodeLikeAGirl/Chiara Pacelli/sfondo3.jpg"); background-size: cover
+
+}
+
+.intestazione h1{
+  font-size:30pt;
+  font-weight:bold;
+}
+
+
+.intestazione h3{
+  font-size:20pt;
+  font-style:italic;
+}
+
+.intestazione h4{
+  font-size:10pt;
+}
+
+.intestazione .cta{
+  color:#ffffff;
+  padding-bottom:10pt;
+}
+
+/****************
+sezione educazione
+**********/
+
+
+.education{
+  list-style-type: none;
+}
+
+.nomeed{
+  font-weight: bold;
+}
+
+.doveed{
+  font-style: italic;
+}
